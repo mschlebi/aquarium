@@ -9,12 +9,13 @@
   <link rel="icon" href="./icon-512.png">
   <link rel="manifest" href="./manifest.webmanifest">
   <title>Stilles Aquarium</title>
-  <script type="module" crossorigin src="./assets/index-D6aEEJd4.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/index-cj19ugxM.css">
+  <script type="module" crossorigin src="./assets/index-BKuzDwrv.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-ZyAruHYU.css">
 </head>
 <body>
   <canvas id="tank"></canvas>
 
+  <div id="hud">
   <div id="counter" class="glass">
     <span class="counter-icon" aria-hidden="true">🐟</span>
     <span id="counter-value">0</span>
@@ -22,10 +23,26 @@
 
   <div id="timer" class="glass" title="Wie lange es schon still ist">
     <span class="counter-icon" aria-hidden="true">⏱️</span>
-    <span id="timer-value">0:00</span>
+    <span id="timer-value">00:00</span>
+  </div>
   </div>
 
   <button id="settings-toggle" class="glass" type="button" aria-label="Einstellungen">⚙️</button>
+
+  <button id="info-toggle" class="glass" type="button" aria-label="Info">ℹ️</button>
+
+  <div id="info" class="glass" hidden>
+    <h2>So funktioniert's</h2>
+    <ul>
+      <li><b>Leise:</b> Ist es still, schwimmt nach und nach ein neuer Fisch herein (Standard: alle 10 Sekunden, bis zu 30 Fische).</li>
+      <li><b>Mittel:</b> Zwischen den beiden Markierungen am Pegelbalken passiert nichts, die Wartezeit für den nächsten Fisch startet neu.</li>
+      <li><b>Laut:</b> Über der rechten Markierung schwimmt ungefähr alle 0,4 Sekunden ein Fisch weg.</li>
+      <li><b>Sehr laut:</b> Bei Klatschen oder Rufen fliehen alle Fische sofort.</li>
+      <li><b>Hai:</b> Bleibt es 2,5 Sekunden am Stück laut, kommt ein Hai und frisst alle Fische, die noch da sind.</li>
+      <li><b>Stoppuhr:</b> Zeigt, wie lange es schon nicht mehr laut war.</li>
+      <li><b>Einstellungen (⚙️):</b> Empfindlichkeit, Abstand zwischen neuen Fischen und Höchstzahl der Fische.</li>
+    </ul>
+  </div>
 
   <div id="settings" class="glass" hidden>
     <label for="sensitivity">Mikrofon-Empfindlichkeit</label>
