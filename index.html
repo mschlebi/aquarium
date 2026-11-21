@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="theme-color" content="#04324a">
+  <link rel="icon" href="./icon-512.png">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <title>Stilles Aquarium</title>
+  <script type="module" crossorigin src="./assets/index-n_jVKYd-.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-Dd4ZSBy7.css">
+</head>
+<body>
+  <canvas id="tank"></canvas>
+
+  <div id="counter" class="glass">
+    <span class="counter-icon" aria-hidden="true">🐟</span>
+    <span id="counter-value">0</span>
+  </div>
+
+  <button id="settings-toggle" class="glass" type="button" aria-label="Einstellungen">⚙️</button>
+
+  <div id="settings" class="glass" hidden>
+    <label for="sensitivity">Mikrofon-Empfindlichkeit</label>
+    <div class="sens-row">
+      <input id="sensitivity" type="range" min="0" max="100" value="50">
+      <span id="sensitivity-value">50</span>
+    </div>
+    <div id="level-bar">
+      <div id="level-fill"></div>
+      <div id="level-quiet-mark" class="level-mark"></div>
+      <div id="level-loud-mark" class="level-mark"></div>
+    </div>
+  </div>
+
+  <div id="overlay">
+    <div class="overlay-card glass">
+      <h1>Stilles Aquarium</h1>
+      <p>Sei leise, dann kommen die Fische. Wird es laut, schwimmen sie weg.</p>
+      <p id="overlay-message"></p>
+      <button id="start-button" type="button">Starten</button>
+    </div>
+  </div>
+
+</body>
+</html>

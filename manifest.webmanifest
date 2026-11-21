@@ -1,0 +1,13 @@
+﻿{
+  "name": "Stilles Aquarium",
+  "short_name": "Aquarium",
+  "lang": "de",
+  "start_url": "./",
+  "display": "fullscreen",
+  "orientation": "any",
+  "background_color": "#04324a",
+  "theme_color": "#04324a",
+  "icons": [
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" }
+  ]
+}
